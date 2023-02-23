@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
         //setContentView(R.layout.activity_main);
         chamaMenuPrincipal();
     }
-
     public void chamaCadastro() {
         setContentView(R.layout.cadastro);
         Button btMenuPrincipal = (Button) findViewById(R.id.btMenuPrincipal);
@@ -25,9 +24,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
-
     public void chamaConsulta() {
         setContentView(R.layout.consulta);
         Button btVoltar= (Button) findViewById(R.id.btVoltar);
@@ -38,13 +35,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
     public void chamaMenuPrincipal() {
         setContentView(R.layout.activity_main);
 
         Button btCadastro = (Button) findViewById(R.id.btTelaCadastro);
         Button btConsulta = (Button) findViewById(R.id.btTelaConsulta);
-
 
         btConsulta.setOnClickListener(new View.OnClickListener() {
             @Override
