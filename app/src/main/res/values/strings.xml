@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Application</string>
+    <string name="telaPrincipal">Tela Principal</string>
+    <string name="telaCadastro">Tela de Cadastro</string>
+    <string name="telaConsulta">Tela de Consulta</string>
+    <string name="endereco">Endereço</string>
+    <string name="nome">Nome</string>
+    <string name="voltar">Voltar</string>
+
+</resources>
