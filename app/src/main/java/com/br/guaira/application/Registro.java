@@ -1,6 +1,6 @@
 package com.br.guaira.application;
 
 public class Registro {
-    string nome,telefone,endereco ;
+    String nome,telefone,endereco ;
 
 }

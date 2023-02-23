@@ -5,9 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-
+     Registro objRegistro;
+     EditText edtNome,edtEndereco,edtTelefone;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,10 +19,20 @@ public class MainActivity extends AppCompatActivity {
     public void chamaCadastro() {
         setContentView(R.layout.cadastro);
         Button btMenuPrincipal = (Button) findViewById(R.id.btMenuPrincipal);
+        Button btGravar = (Button) findViewById(R.id.btGravar);
         btMenuPrincipal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 chamaMenuPrincipal();
+            }
+        });
+        btGravar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                objRegistro = new Registro();
+                edtNome = (EditText) findViewById(R.id.edtNome);
+                edtEndereco = (EditText) findViewById(R.id.edtEndereco);
+                edtTelefone = (EditText) findViewById(R.id.edtTelefone);
             }
         });
 

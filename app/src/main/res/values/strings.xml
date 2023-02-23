@@ -6,5 +6,6 @@
     <string name="endereco">Endereço</string>
     <string name="nome">Nome</string>
     <string name="voltar">Voltar</string>
+    <string name="gravar">Gravar</string>
 
 </resources>
