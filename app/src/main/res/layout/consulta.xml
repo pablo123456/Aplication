@@ -8,9 +8,36 @@
     tools:context=".MainActivity">
 
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/telaConsulta" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nome" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNome"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/endereco" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEndereco" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/telefone" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTelefone" />
+
+
     <Button
         android:id="@+id/btVoltar"
         android:layout_width="wrap_content"

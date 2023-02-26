@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
      Registro objRegistro;
@@ -33,13 +34,26 @@ public class MainActivity extends AppCompatActivity {
                 edtNome = (EditText) findViewById(R.id.edtNome);
                 edtEndereco = (EditText) findViewById(R.id.edtEndereco);
                 edtTelefone = (EditText) findViewById(R.id.edtTelefone);
+                //Gravar
+                objRegistro.nome = edtNome.getText().toString();
+                objRegistro.endereco = edtEndereco.getText().toString();
+                objRegistro.telefone = edtTelefone.getText().toString();
             }
         });
 
     }
     public void chamaConsulta() {
         setContentView(R.layout.consulta);
+
         Button btVoltar= (Button) findViewById(R.id.btVoltar);
+
+        TextView tvEndereco = (TextView) findViewById(R.id.tvEndereco);
+        TextView tvTelefone = (TextView) findViewById(R.id.tvTelefone);
+        TextView tvNome = (TextView) findViewById(R.id.tvNome);
+
+        tvNome.setText(objRegistro.nome);
+        tvEndereco.setText(objRegistro.endereco);
+        tvTelefone.setText(objRegistro.telefone);
         btVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
